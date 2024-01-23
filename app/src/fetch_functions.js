@@ -8,7 +8,7 @@ export const fetchData = async (url) => {
   
     // now we do something with the data
     console.log(jsonData);
-    return jsonData
+    // return jsonData
   };
 
 
