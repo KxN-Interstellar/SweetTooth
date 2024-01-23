@@ -1,14 +1,21 @@
 import { fetchData } from "./fetch_functions"
+import { renderAllDesserts } from "./render_functions"
 // fetchData.js
 
+const toggleButton = document.getElementsByClassName('toggle-button')[0]
+const navbarLinks = document.getElementsByClassName('navbar-links')[0]
 
-
-
-const allDesserts = fetchData('https://www.themealdb.com/api/json/v1/1/filter.php?c=dessert')
-allDesserts.forEach((dessert) => {
-    document.querySelector()
+toggleButton.addEventListener('click', () => {
+    navbarLinks.classList.toggle('active')
 })
 
+const main = async() => {
+    const allDesserts = await fetchData('https://www.themealdb.com/api/json/v1/1/filter.php?c=dessert')
+    renderAllDesserts(allDesserts)
+
+}
+
+main()
 
 
 
@@ -17,6 +24,6 @@ allDesserts.forEach((dessert) => {
 Nicole
 */
 
-const specificDesert = fetchData('')
+// const specificDesert = fetchData('')
 
 
