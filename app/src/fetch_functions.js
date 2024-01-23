@@ -1,4 +1,4 @@
-const fetchData = async (url) => { 
+export const fetchData = async (url) => { 
     // When we await a Promise, we are given the resolved value (the Response object)
     // An awaited statement becomes "blocking"
     const response = await fetch(url);
