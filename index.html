@@ -1,33 +1,32 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
- <meta charset="UTF-8">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <title>Tester</title>
-</head>
-<body>
- <h1>Test your API!</h1>
- <script>
-
-
-   const testRoute = async (url) => {
-     const response = await fetch(url)
-     const data = await response.json()
-     console.log('data:', data);
-   }
-
-
-
-
-   const url1 = 'https://www.themealdb.com/api/json/v1/1/filter.php?c=dessert';
-   const url2 = 'https://www.themealdb.com/api/json/v1/1/lookup.php?i=53049';
-
-  
-   testRoute(url1);
-   testRoute(url2);
-
-
-
- </script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sweet Tooth</title>
+    <script type="module" crossorigin src="/SweetTooth/assets/index-JQITG_6L.js"></script>
+    <link rel="stylesheet" crossorigin href="/SweetTooth/assets/index-RFjVc6so.css">
+  </head>
+  <body>
+    <div id="app">
+      <nav class="navbar">
+        <div class="brand-title">Sweet Tooth</div>
+        <a href="#" class="toggle-button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
+        <div class="navbar-links">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Desserts</a></li>
+            </ul>
+        </div>
+    </nav>
+      <h1>Sweet Tooth</h1>
+      <p></p>
+      <ul class="dessert-pics"></ul>
+    </div>
+  </body>
 </html>
