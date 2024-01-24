@@ -1,6 +1,6 @@
 export const renderAllDesserts = (data) => {
     const ul = document.querySelector('.dessert-pics')
-    console.log(data)
+    // console.log(data)
     data.meals.forEach((dessert) => {
     const img = document.createElement("img")
     img.src = dessert.strMealThumb
