@@ -1,6 +1,6 @@
 import { fetchData } from "./fetch_functions"
 import { renderAllDesserts } from "./render_functions"
-// fetchData.js
+
 
 const toggleButton = document.getElementsByClassName('toggle-button')[0]
 const navbarLinks = document.getElementsByClassName('navbar-links')[0]
@@ -28,5 +28,5 @@ Nicole
 
 
 
-specificDessert()
+//specificDessert()
  

@@ -5,10 +5,9 @@ export const renderAllDesserts = (data) => {
     const img = document.createElement("img")
     img.src = dessert.strMealThumb
     const p = document.createElement("p")
-     p.textContent = dessert.strMeal
+    p.textContent = dessert.strMeal
     const li = document.createElement('li')
     li.append(img, p)
     ul.append(li)
-    console.log('hi')
 })
 }
