@@ -1,3 +1,5 @@
+
+
 export const renderAllDesserts = (data) => {
     const ul = document.querySelector('.dessert-pics')
     // console.log(data)
@@ -22,5 +24,6 @@ export const renderAllDesserts = (data) => {
     specificDessert.append(p)
 
     document.getElementById('app').style.display = 'block'
-
 }
+
+
