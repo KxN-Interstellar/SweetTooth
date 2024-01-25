@@ -7,11 +7,11 @@ export const fetchData = async (url) => {
     const jsonData = await response.json();
   
     // now we do something with the data
-     console.log(jsonData);
+    //  console.log(jsonData);
      return jsonData
   };
 
-  
+
 
 
   // i am here (nicole)
