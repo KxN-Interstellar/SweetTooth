@@ -4,9 +4,11 @@ export const renderAllDesserts = (data) => {
     data.meals.forEach((dessert) => {
         const img = document.createElement("img")
         img.src = dessert.strMealThumb
+        img.width = 200
         const p = document.createElement("p")
         p.textContent = dessert.strMeal
         const button = document.createElement('button')
+        button.className = 'getRecipe'
         button.textContent = "Recipe"
         button.dataset.id = dessert.idMeal
         const li = document.createElement('li')
