@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
 /* :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -43,6 +45,7 @@ h1 {
 }
 
 .brand-title {
+    font-family: 'Lobster', sans-serif;
     font-size: 1.5rem;
     margin: .5rem;
 }
@@ -123,6 +126,38 @@ h1 {
     }
 }
 
-.dessert-pics {
-    display: flex;
+.dessert-pics { 
+   display: flex;
+   flex-wrap: wrap;
+    gap: 20px;
 }
+.dessert-pics li { 
+    
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    
+    border-bottom: none;
+    box-shadow: 3px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+ .dessert-pics li p {
+    width: 200px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+ }
+ .getRecipe {
+    height: 30px
+ }
+/* 
+.dessert-pics img { 
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+}
+
+.dessert-pics {
+    flex: 1 1 150px;
+} */
