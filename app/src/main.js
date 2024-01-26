@@ -1,5 +1,5 @@
 import { fetchData } from "./fetch_functions"
-import { renderAllDesserts,
+import { renderAllDesserts, renderSingleDessert, getIngredientsNames, getIngredientMeasurements, getIngredientList
  } from "./render_functions"
 
 
@@ -26,11 +26,10 @@ const handleButtonClick = async (event) => {
         // console.log(idMeal);
         const dessert = await singleDessert(idMeal)
         console.log(dessert);
+        const ingredientList = getIngredientList(dessert)
+        console.log("hi", ingredientList)
+        renderSingleDessert(dessert, ingredientList)
     }
-   
-    
-    
-    
 }
 
 
