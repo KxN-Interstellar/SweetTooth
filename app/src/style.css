@@ -163,11 +163,16 @@ body {
  }
 
  #specifics {
-    display: block;
-    text-align: center;
-    justify-content: center;
-    gap: 15px;
+    display: flex;
  }
+
+.container {
+    width: 50%;
+}
+
+.recipeContent {
+    text-align: center;
+}
 
 .singleDessertHeading {
     font-style: italic;
@@ -176,7 +181,10 @@ body {
 }
 
 .dessertImg {
+    width: 400px;
     margin-top: 40px;
+    position: sticky;
+    inset: top;
 }
 
 .headers {

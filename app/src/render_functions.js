@@ -76,7 +76,15 @@ export const renderSingleDessert = (dessertdata, ingredientList) => {
     const img = document.createElement("img")
     img.className = "dessertImg"
     img.src = dessertdata.meals[0].strMealThumb
+    const container1 = document.createElement("div")
+    container1.className = "container"
+    container1.id = "sticky"
+    const container2 = document.createElement("div")
+    container2.className = "container"
+    const stickydessert = document.createElement("div")
+    stickydessert.className = "recipeContent"
     const dessertText = document.createElement("div")
+    dessertText.className = "recipeContent"
     const p = document.createElement('p')
     p.className = "singleDessertHeading"
     p.innerText = dessertdata.meals[0].strMeal
@@ -96,8 +104,14 @@ export const renderSingleDessert = (dessertdata, ingredientList) => {
     instructionsHeader.className = "headers"
     const recipe = document.createElement("p")
     recipe.innerText = dessertdata.meals[0].strInstructions
-    dessertText.append(p, ingredientsHeader, ingredients, instructionsHeader, recipe)
-    specificDessert.append(img, dessertText)
-    document.getElementById('specifics').style.display = "block"
+    const favorite = document.createElement("button")
+    favorite.innerText = "Add to Favorites"
+    favorite.className = "favsButton"
+    dessertText.append(ingredientsHeader, ingredients, instructionsHeader, recipe)
+    stickydessert.append(img, p, favorite)
+    container1.append(stickydessert)
+    container2.append(dessertText)
+    specificDessert.append(container1, container2)
+    document.getElementById('specifics').style.display = "flex"
 }
 
