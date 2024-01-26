@@ -32,8 +32,6 @@ const handleButtonClick = async (event) => {
     }
 }
 
-
-
 ///////////////////////////////
 const main = async () => {
     const allDesserts = await fetchData('https://www.themealdb.com/api/json/v1/1/filter.php?c=dessert')
