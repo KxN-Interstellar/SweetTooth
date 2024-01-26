@@ -26,14 +26,8 @@ const handleButtonClick = async (event) => {
         // console.log(idMeal);
         const dessert = await singleDessert(idMeal)
         console.log(dessert);
-    }
-   
-    
-    
-    
+    } 
 }
-
-
 
 ///////////////////////////////
 const main = async () => {
