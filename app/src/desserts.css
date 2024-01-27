@@ -4,6 +4,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color: #Fae8da;
 }
 /* :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
@@ -45,13 +46,21 @@ body {
     padding: 0;
 }
 
+#dessert-heading {
+    font-size: 80px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    letter-spacing: 0.03em;
+    text-align: center;
+    color:#c73747
+}
 .navbar {
     display: flex;
     position: relative;
     justify-content: space-between;
     align-items: center;
-    background-color: rgba(241, 194, 237, 0.858);
-    color:rgb(0, 0, 0);
+    background-color: #c73747;
+    letter-spacing: 0.05em;
+    color:#Fae8da;
 }
 
 .brand-title {
@@ -76,13 +85,13 @@ body {
 
 .navbar-links li a {
     text-decoration: none;
-    color: rgb(0, 0, 0);
+    color: #Fae8da;
     padding: 1rem;
     display: block;
 }
 
 .navbar-links li:hover {
-    background-color: rgb(242, 216, 254);
+    background-color:#d25f6c;
 }
 
 .toggle-button {
@@ -99,7 +108,7 @@ body {
 .toggle-button .bar {
     height: 3px;
     width: 100%;
-    background-color: rgb(0, 0, 0);
+    background-color: #Fae8da;
     border-radius: 10px;
 }
 
@@ -140,16 +149,18 @@ body {
    display: flex;
    flex-wrap: wrap;
     gap: 20px;
+
 }
+
 .dessert-pics li { 
     
     overflow: hidden;
     display: flex;
     flex-direction: column;
     text-align: center;
-    
+    border-radius: 4px;
     border-bottom: none;
-    box-shadow: 2px 2px 2px 2px rgba(255, 221, 205, 0.958);
+    box-shadow: 0px 0px 9px 1px #efbdc27c;
 }
 
  .dessert-pics li p {
@@ -174,11 +185,20 @@ body {
     text-align: center;
 }
 
+/* //ingredients// */
 .singleDessertHeading {
     font-style: italic;
     font-weight: bolder;
     font-size:xx-large;
+
 }
+
+.recipeContent {
+
+}
+
+
+/* ^^ recipe ^^ */
 
 .dessertImg {
     width: 400px;
@@ -187,8 +207,22 @@ body {
     inset: top;
 }
 
+.getRecipe {
+  color: #562b1c;
+    border: #c73747;
+    font-family: 'Courier New', Courier, monospace;
+}
+
 .headers {
     font-style: italic;
     /* font-weight: bolder; */
     font-size:x-large;
 }
+
+p {
+    color: #d25f6c;
+  
+
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+

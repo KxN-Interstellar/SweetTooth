@@ -104,11 +104,11 @@ export const renderSingleDessert = (dessertdata, ingredientList) => {
     instructionsHeader.className = "headers"
     const recipe = document.createElement("p")
     recipe.innerText = dessertdata.meals[0].strInstructions
-    const favorite = document.createElement("button")
-    favorite.innerText = "Add to Favorites"
-    favorite.className = "favsButton"
+    // const favorite = document.createElement("button")
+    // favorite.innerText = "Add to Favorites"
+    // favorite.className = "favsButton"
     dessertText.append(ingredientsHeader, ingredients, instructionsHeader, recipe)
-    stickydessert.append(img, p, favorite)
+    stickydessert.append(img, p)
     container1.append(stickydessert)
     container2.append(dessertText)
     specificDessert.append(container1, container2)

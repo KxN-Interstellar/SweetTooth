@@ -5,6 +5,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color: #Fae8da;
 }
 
 /* vv Nav bar vv */
@@ -14,14 +15,16 @@ body {
     position: relative;
     justify-content: space-between;
     align-items: center;
-    background-color: rgba(241, 194, 237, 0.858);
-    color:rgb(0, 0, 0);
+    background-color: #c73747; 
+    letter-spacing: 0.05em; 
+    color: #Fae8da;
 }
 
 .brand-title {
     font-family: 'Lobster', sans-serif;
     font-size: 1.5rem;
     margin: .5rem;
+    letter-spacing: 0.05em;
 }
 
 .navbar-links {
@@ -40,13 +43,13 @@ body {
 
 .navbar-links li a {
     text-decoration: none;
-    color: rgb(0, 0, 0);
+    color: #Fae8da;
     padding: 1rem;
     display: block;
 }
 
 .navbar-links li:hover {
-    background-color: rgb(98, 52, 11);
+    background-color: rgb(212, 101, 140);
 }
 
 .toggle-button {
@@ -63,7 +66,7 @@ body {
 .toggle-button .bar {
     height: 3px;
     width: 100%;
-    background-color: rgb(0, 0, 0);
+    background-color: #Fae8da;
     border-radius: 10px;
 }
 
@@ -138,34 +141,42 @@ body {
 #heading {
 text-align: center;
 font-family: 'Lobster', 'sans-serif';
-font-size:15vw; 
+font-size:12vw; 
 margin: 1.0rem; 
-color: rgb(241, 194, 237, 0.858);
-/* text-shadow: rgba(0, 0, 0, 0.994); */
+letter-spacing: 0.03em;
+color: #c73747;
+
 }
 
 
 .photos {
+    overflow: hidden;
     display: flex;
     flex-wrap: wrap;
-     gap: 20px;
-     justify-content: center;
+    gap: 20px;
+    justify-content: center;
+
 }
 
 .photos img {
     /* flex: 0 0; */
-    margin: 20px;
+    overflow: hidden;
+    border-radius: 4px;
+    /* margin: 20px; */
     max-width: 350px;
     max-height: 350px; 
-    border-radius: 4px;
+    box-shadow: 0px 0px 0px 0.5px #c73747;
+
 } 
 
 #mission {
     text-align: center;
-    font-family: 'Lobster', 'sans-serif';
+    /* font-family: 'Lobster', 'sans-serif'; */
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size:3vw; 
     margin: 1.0rem; 
-    color: rgb(233, 164, 210); 
+    letter-spacing: 0.05em;
+    color: #c73748cf; 
 }
 
 a {
