@@ -67,6 +67,8 @@ body {
     font-family: 'Lobster', sans-serif;
     font-size: 1.5rem;
     margin: .5rem;
+    letter-spacing: 0.05em;
+
 }
 
 .navbar-links {
@@ -170,12 +172,17 @@ body {
     text-overflow: ellipsis;
  }
  .getRecipe {
-    height: 30px
+    height: 50px
  }
 
  #specifics {
     display: flex;
  }
+
+#goBack {
+    display: flex;
+    height: 200px;
+}
 
 .container {
     width: 50%;
@@ -222,7 +229,33 @@ font-size: 40px;
 p {
     color: #d25f6c;
   
-
+    
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
 }
 
+.headers {
+    font-weight:900;
+    font-size: xx-large;
+    padding-right: 100px;
+}
+
+.instructions {
+font-size: larger;
+text-align: left;
+padding-right: 100px;
+}
+
+br {
+    padding-right: 100px;
+    line-height: 1.5pt;
+}
+
+/* p {
+    padding-right: 100px;
+} */
+
+.singleIngredients {
+    padding-right: 100px;
+    font-size: larger;
+    /* text-align: center; */
+}

@@ -96,6 +96,7 @@ export const renderSingleDessert = (dessertdata, ingredientList) => {
     console.log(usableList)
     for (const [key, value] of usableList){
         const mealNeeds = document.createElement("p")
+        mealNeeds.className = 'singleIngredients'
         mealNeeds.innerText = `${key} : ${value}`
         ingredients.append(mealNeeds)
     }
@@ -103,15 +104,26 @@ export const renderSingleDessert = (dessertdata, ingredientList) => {
     instructionsHeader.textContent = "Instructions:"
     instructionsHeader.className = "headers"
     const recipe = document.createElement("p")
+    recipe.className = 'instructions'
     recipe.innerText = dessertdata.meals[0].strInstructions
-    const favorite = document.createElement("button")
-    favorite.innerText = "Add to Favorites"
-    favorite.className = "favsButton"
+    // const favorite = document.createElement("button")
+    // favorite.innerText = "Add to Favorites"
+    // favorite.className = "favsButton"
+    // if (document.referrer.includes("src/desserts.html")) {
+    // const backButton = document.createElement("button");
+    // backButton.textContent = "Go Back";
+    // backButton.onclick = function() {
+    //     history.back();
+    // };
+
+
+
     dessertText.append(ingredientsHeader, ingredients, instructionsHeader, recipe)
-    stickydessert.append(img, p, favorite)
+    stickydessert.append(img, p)
     container1.append(stickydessert)
     container2.append(dessertText)
     specificDessert.append(container1, container2)
     document.getElementById('specifics').style.display = "flex"
 }
+
 
